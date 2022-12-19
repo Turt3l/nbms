@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #202020;
+}
+h1, p {
+    margin: 0;
+}
+#appContainer.visible {
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    display: block;
+}
+#appContainer {
+    display: none;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+.headerLogoContainer {
+    margin-left: 50px;
+    width: 100%;
+}
+.textWrapper {
+    margin-left: 100px;
+}
+.LandingWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-color: #202020;
+    height: 100vh;
+}
+.imageSliderContainer {
+    height: 100%;
+    background-color: #FF8B00;
+}
+.imageSliderContainer img {
+    max-width: 600px;
+}
+.col {
+    width: 50%;
+}
+.text-col {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.overlay {
+    opacity: 0.8;
+    background: rgba(0, 0, 0, 0.44);
+    height: 100vh;
+}
+.text-col::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 100vh solid transparent;
+    z-index: 100;
+    left: 100%;
+    border-left: 50vh solid #202020;
+}
+.descriptionText {
+    padding-top: 20px;
+    
+}
+.textContainer {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+.descriptionText {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.slide-up {
+    opacity: 0;
+    animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both; 
+}
+.slide-up-slow {
+    opacity: 0;
+    animation: slide-up 1.6s cubic-bezier(0.65, 0, 0.35, 1) both; 
+}
+@keyframes slide-up {
+0% {
+    opacity: 0;
+    transform: translateY(100px); }
+100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.elementCol {
+    display: flex;
+    flex-wrap: wrap;
+}
+.element {
+    width: 33%;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 90px;
+    /* identical to box height */
+
+
+    color: white;
+}
+.elementDescriptionText {
+    font-weight: 500;
+    font-size: 25px;
+}
+.elementPicture img {
+    max-width: 300px;
+}
