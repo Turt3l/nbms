@@ -106,3 +106,28 @@ h1, p {
 100% {
     opacity: 1;
     transform: translateY(0); } }
+
+.elementCol {
+    display: flex;
+    flex-wrap: wrap;
+}
+.element {
+    width: 33%;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 90px;
+    /* identical to box height */
+
+
+    color: white;
+}
+.elementDescriptionText {
+    font-weight: 500;
+    font-size: 25px;
+}
+.elementPicture img {
+    max-width: 300px;
+}
