@@ -5,7 +5,7 @@ function LandingPage() {
     return(
         <div className="LandingContainer">
             <div className="LandingWrapper">
-                <div className="col text-col">
+                <div className="col text-col" id="item">
                     <div className="headerLogoContainer">
                         <div className="logo">
                             <img src={logo}/>
@@ -21,7 +21,7 @@ function LandingPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="scrolldownContainer">
+                    <div className="landingDec" id="landingDec">
 
                     </div>
                 </div>
