@@ -127,6 +127,7 @@ h1, p {
 }
 .elementPicture img {
     max-width: 300px;
+<<<<<<< HEAD
 }
 
 
@@ -176,4 +177,6 @@ h1, p {
     height: 700px;
 
     float: left;
+=======
+>>>>>>> 3f1488439b8c816604a5f87dab3d807796d0205d
 }
