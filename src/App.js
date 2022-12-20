@@ -1,5 +1,4 @@
 import LandingPage from "./sections/landingPage/LandingPage";
-import WhatDoWeDo from "./sections/wdwdPage/Wdwd";
 import PerfectWeb from "./sections/perfectweb/perfectweb";
 function App() {
   // setInterval(function(){
@@ -9,7 +8,6 @@ function App() {
     <div className="App">
       <div >
         <LandingPage/>
-        <WhatDoWeDo/>
         <PerfectWeb/>
       </div>
     </div>
